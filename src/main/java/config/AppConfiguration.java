@@ -26,8 +26,8 @@ public class AppConfiguration extends WebMvcConfigurerAdapter implements Applica
     public InternalResourceViewResolver templateResolver() {
         InternalResourceViewResolver templateResolver = new InternalResourceViewResolver();
         templateResolver.setApplicationContext(applicationContext);
-        templateResolver.setPrefix("/");
-        templateResolver.setSuffix("");
+        templateResolver.setPrefix("/WEB-INF/views/");
+        templateResolver.setSuffix(".jsp");
         return templateResolver;
     }
 }
